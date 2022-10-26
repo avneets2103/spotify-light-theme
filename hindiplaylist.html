@@ -27,6 +27,8 @@
     <!-- Css file -->
     <link rel="stylesheet" href="hindiplaylist.css" />
   </head>
+
+   <!--body  -->
   <body>
     <!-- vertical nav bar -->
     <nav class="index">
@@ -80,7 +82,7 @@
       
           <!-- songs section -->
           <div class="songSection">
-            <div class="song" id="1">
+            <div class="song selectedSong" id="1">
               <p class="number">1</p>
               <img class="coverImg" src="cover/1.jpg" alt="" />
               <div class="details">
@@ -133,18 +135,18 @@
                   alt=""
                 />
                 <img id="backward" src="images/backward-track.png" alt="" />
-                <img id="pause" src="images/pause.png" alt="" />
+                <img id="play" src="images/play-button.png" alt="" />
                 <img id="next" src="images/next.png" alt="" />
                 <img id="replay" src="images/replay.png" alt="" />
               </div>
               <br>
               <div class="player_progress">
-                <input type="range" name="audio_progress" id="audioProgress" />
+                <input type="range" name="audio_progress" id="audioProgress" value="0"/>
               </div>
             </div>
             <div class="volume_control">
               <img src="images/volume.png" alt="" />
-              <input type="range" name="volume" id="volume" />
+              <input type="range" name="volume" id="volume" value="100"/>
             </div>
           </div>
     </div>

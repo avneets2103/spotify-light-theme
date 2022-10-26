@@ -264,3 +264,15 @@ input[type=range] {
     top:5px;
     width:20%;
   }
+
+  /* js classses */
+  .selectedSong{
+    background-color: rgb(184, 226, 184);
+    box-shadow: 3px 3px 5px 6px #ccc;
+  }
+
+  .replayOn{
+    background-color: rgb(111, 219, 111);
+    border-radius: 35px;
+    padding:5px;
+  }
