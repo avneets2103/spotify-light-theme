@@ -18,12 +18,13 @@ a:hover{
 }
 
 .index{
+    font-size: 0.9rem;
     z-index: 1;
     float:left;
     position: sticky;
     top:0;
     left:0;
-    padding:2%;
+    padding:1%;
     padding-top: 0;
     width: 13%;
     display: flex;
@@ -73,7 +74,7 @@ a:hover{
     background-color: rgb(98, 97, 97);
     position: sticky;
     top:0;
-    padding:34px;
+    padding:17px;
     color:aliceblue;
     background-image: linear-gradient(to bottom,black,rgb(149, 147, 147));
 
@@ -84,7 +85,7 @@ a:hover{
 }
 
 .left img{
-    width:100%;
+    width:70%;
     margin:20px;
 }
 
@@ -95,7 +96,7 @@ a:hover{
 }
 
 .right h1{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 /* player section */
@@ -110,9 +111,10 @@ a:hover{
 
 .player{
     position: relative;
+    top:5px;
     left:20%;
-    padding:30px;
-    padding-bottom: 15px;
+    padding:10px;
+    padding-bottom: 5px;
     display:flex;
     justify-content:space-around;
 }
@@ -139,7 +141,7 @@ a:hover{
 }
 
 #audioProgress{
-    width: 100%;
+    width: 70%;
     margin:auto;
 }
 
@@ -150,12 +152,11 @@ a:hover{
 
 .volume_control img{
     position: relative;
-    bottom:2px;
+    top:2px;
 }
 
 .currentSong{
     z-index: 3;
-    margin-left:50px;
 }
 
 .currentSong img{
@@ -177,7 +178,11 @@ a:hover{
   align-items: center;
     display: flex;
     justify-content: space-between;
-    padding:10px;
+    padding:5px 50px;
+}
+
+.song h5{
+  font-size: 1rem;
 }
 
 .like{
@@ -186,12 +191,12 @@ a:hover{
 }
 
 .coverImg{
-    width:5%;
+    width:4%;
 }
 
 /* slider design */
 input[type=range] {
-    height: 25px;
+    height: 15px;
     /* -webkit-appearance: none; */
     margin: 10px 0;
     width: 100%;
@@ -201,17 +206,16 @@ input[type=range] {
   }
   input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
-    height: 4px;
+    height: 2px;
     cursor: pointer;
     /* animate: 0.2s; */
-    box-shadow: 1px 1px 1px #000000;
     background: #000000;
     border-radius: 0px;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
   }
   input[type=range]::-webkit-slider-thumb {
-    box-shadow: 2px 2px 4px #FFFFFF;
-    border: 2px solid #000000;
+    /* box-shadow: 2px 2px 4px #FFFFFF; */
+    /* border: 2px solid #000000; */
     height: 15px;
     width: 16px;
     border-radius: 50px;
@@ -287,12 +291,34 @@ input[type=range] {
 
   /* js classses */
   .selectedSong{
-    background-color: rgb(184, 226, 184);
-    box-shadow: 3px 3px 5px 6px #ccc;
+    background-color: rgb(217, 217, 217);
   }
 
   .replayOn{
     background-color: rgb(111, 219, 111);
     border-radius: 35px;
     padding:5px;
+  }
+
+  .sideimg{
+    background-color: transparent;
+    backface-visibility: hidden;
+    width:16%;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    padding:0;
+    z-index: 5;
+    position: fixed;
+    bottom:0;
+    left:0;
+  }
+
+  .sideimg h6{
+    margin-left:10px;
+    width:60%;
+  }
+  .sideimg img{
+    width:80%;
   }
